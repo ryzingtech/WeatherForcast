@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Climate Change Education</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        /* Global Styles */
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: linear-gradient(to top, #09203f 0%, #537895 100%);
+            color: #333;
+        }
+
+        h1,
+        h2,
+        h3 {
+            color: #2a9d8f;
+        }
+
+        h1 {
+            text-align: center;
+            padding-top: 20px;
+            margin-bottom: 0;
+        }
+
+        a {
+            color: #2a9d8f;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Navigation Styles */
+        nav {
+            background-color: #264653;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            font-weight: bold;
+        }
+
+        /* Hero Section Styles */
+        .hero {
+            background: url('https://www.ncei.noaa.gov/sites/default/files/styles/uncropped/public/2023-09/world%20climate%20map.jpeg?h=79b0f0e8&itok=lZNV1TUm') center/cover no-repeat;
+            height: 400px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+        }
+
+        .hero h1 {
+            background-color: rgba(56, 105, 124, 0.7);
+            color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        /* Content Styles */
+        .content {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin: 20px;
+        }
+
+        .content .section {
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            width: 45%;
+            margin: 10px;
+            box-sizing: border-box;
+        }
+
+        .content .section img {
+            max-width: 100%;
+            border-radius: 8px;
+        }
+
+        /* Weather Section Styles */
+        #weather {
+            text-align: center;
+            background-color: #e9f5f5;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        #weather h3 {
+            margin: 0 0 10px;
+        }
+
+        /* Footer Styles */
+        footer {
+            background-color: #264653;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        /* Responsive Styles */
+        @media screen and (max-width: 768px) {
+            .content .section {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li><a href="#about">About Climate Change</a></li>
+            <li><a href="#impacts">Impacts</a></li>
+            <li><a href="#solutions">Solutions</a></li>
+            <li><a href="#weather">Weather Updates</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Understanding Climate Change</h1>
+    </section>
+
+    <!-- Main Content -->
+    <div class="content">
+        <!-- About Climate Change Section -->
+        <div class="section" id="about">
+            <h2>About Climate Change</h2>
+            <img src="https://science.nasa.gov/wp-content/uploads/2023/11/power-station-374097-1920.jpeg?w=1536&format=webp&crop=1"
+                alt="Climate Change">
+            <p>Climate change refers to long-term alterations in temperature, precipitation, wind patterns, and other elements of the Earth's climate system. It is largely driven by human activities such as burning fossil fuels, deforestation, and industrial processes that increase greenhouse gases in the atmosphere.</p>
+            <p>Learn more about the science behind climate change and how it is affecting our world.</p>
+            <a href="https://climate.nasa.gov/" target="_blank" id="co">Read more at NASA Climate</a>
+        </div>
+
+        <!-- Impacts of Climate Change Section -->
+        <div class="section" id="impacts">
+            <h2>Impacts of Climate Change</h2>
+            <img src="https://science.nasa.gov/wp-content/uploads/2023/11/effectsbannernew-opt.jpeg?w=1536&format=webp&crop=1"                alt="Impacts of Climate Change">
+            <p>Climate change has significant impacts on the environment, human health, agriculture, and economies worldwide. Rising sea levels, increased frequency of extreme weather events, and changes in biodiversity are just a few of the challenges we face.</p>
+            <p>Understand how these changes affect us and what we can do to adapt and mitigate these impacts.</p>
+            <a href="https://www.ipcc.ch/" target="_blank" id="co">Visit IPCC for detailed reports</a>
+        </div>
+
+        <!-- Solutions to Combat Climate Change Section -->
+        <div class="section" id="solutions">
+            <h2>Solutions to Combat Climate Change</h2>
+            <img src="https://climateaction.africa/wp-content/uploads/2021/09/climate-change-solution-2-1024x449.png"
+                alt="Solutions to Climate Change">
+            <p>Addressing climate change requires a collective effort from governments, businesses, and individuals. Solutions include transitioning to renewable energy sources, improving energy efficiency, and adopting sustainable agricultural practices.</p>
+            <p>Discover how you can contribute to a sustainable future and take action against climate change.</p>
+            <a href="https://www.un.org/en/climatechange/raising-ambition" target="_blank" id="co">Explore UN Climate Action</a>
+        </div>
+
+        <!-- Weather Updates Section -->
+        <div class="section" id="weather">
+            <h2>Weather Updates</h2>
+            <div id="climate-info">
+                <!-- Weather information will be inserted here -->
+                <p>Loading weather data...</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Climate Change Awareness | All Rights Reserved</p>
+    </footer>
+
+    <script>
+        // Replace with your actual OpenWeatherMap API key
+        const apiKey = '60944d543be2a1b8559b29b367ebf93c';
+
+        // Function to fetch weather data based on latitude and longitude
+        function fetchWeather(latitude, longitude) {
+            const apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${apiKey}&units=metric`;
+
+            // Fetch weather data from the API
+            fetch(apiUrl)
+                .then(response => response.json())
+                .then(data => {
+                    // Extract relevant data
+                    const cityName = data.name;
+                    const weatherDescription = data.weather[0].description;
+                    const temperature = data.main.temp;
+                    const windSpeed = data.wind.speed;
+
+                    // Insert data into the HTML
+                    document.getElementById('climate-info').innerHTML = `
+                        <h3>Weather in ${cityName}</h3>
+                        <p>Description: ${weatherDescription}</p>
+                        <p>Temperature: ${temperature}°C</p>
+                        <p>Wind Speed: ${windSpeed} m/s</p>
+                    `;
+                })
+                .catch(error => {
+                    console.error('Error fetching weather data:', error);
+                    document.getElementById('climate-info').innerHTML = `<p>Error fetching weather data. Please try again later.</p>`;
+                });
+        }
+
+        // Function to get user's current location
+        function getUserLocation() {
+            if (navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition(
+                    (position) => {
+                        const latitude = position.coords.latitude;
+                        const longitude = position.coords.longitude;
+                        fetchWeather(latitude, longitude);
+                    },
+                    (error) => {
+                        console.error('Error getting location:', error);
+                        document.getElementById('climate-info').innerHTML = `<p>Unable to retrieve location. Please check your location settings and try again.</p>`;
+                    }
+                );
+            } else {
+                document.getElementById('climate-info').innerHTML = `<p>Geolocation is not supported by this browser.</p>`;
+            }
+        }
+
+        // Call the function to get user location and fetch weather data
+        getUserLocation();
+    </script>
+
+</body>
+
+</html>
