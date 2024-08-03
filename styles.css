@@ -1,151 +1,117 @@
-/* Existing styles... */
-
-body{
-    background: linear-gradient(to top, #09203f 0%, #537895 100%);
+body {
+    font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
-    background-size: cover; /* Cover the entire page */
-    background-position: center; /* Center the image */
-    background-repeat: no-repeat;
-}
-#climate-info {
-    padding: 20px;
-    background-color: #f1f1f119;
-    border-radius: 8px;
-    margin-top: 20px;
-    font-family: Arial, sans-serif;
-    text-align: center;
-    color: #f1f1f1;
 }
 
-#climate-info h3 {
-    margin-top: 0;
-}
-
-#climate-info p {
-    margin: 5px 0;
-}
-.container ul li{
-    list-style: none;
-    text-decoration: none;
-    
-    color: #f1f1f1;
-}
-a{
-   font-size: 3dvb;
-    text-decoration: none;
-    color:#f1f1f1;
-}
-.container{
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex; /* Use flexbox to align items horizontally */
-    justify-content: center; 
-      height: 60px;
-    gap: 2vw;
-    
-}
-.container ul{
-   justify-content: space-between;
-}
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 15px;
+    background-color: #2c3e50;
+    color: white;
+}
+
+.logo img {
+    max-width: 100px;
+}
+
+nav.container {
+    position: relative;
+}
+
+.menu-toggle {
+    display: none; /* Hide on desktop */
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 15px;
+}
+
+.menu li {
+    display: inline;
+}
+
+.menu a {
+    text-decoration: none;
+    color: white;
+    padding: 8px 15px;
+    transition: background-color 0.3s;
+}
+
+.menu a:hover {
+    background-color: #34495e;
+}
+
+.info {
+    background-color: #34495e;
     padding: 20px;
-    
+    color: white;
 }
-.logo img{
-    height: 50px;
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .menu {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        background-color: #2c3e50;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        z-index: 1;
+    }
+
+    .menu li {
+        display: block;
+        text-align: center;
+    }
+
+    .menu-toggle {
+        display: block; /* Show toggle button on mobile */
+    }
+
+    .menu.active {
+        display: flex;
+    }
 }
-#para{
-    font-family: "Playwrite AR", cursive;
+
+.section {
+    padding: 40px;
+    background-color: #f2f2f2;
 }
-h3{
-    color: #f1f1f1;
-    text-align: center;
+
+.case-study {
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
-table th img{
-    border-radius: 20px;
+
+.case-study img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 8px;
 }
+
 footer {
-    background-color: #26465352;
-    color: #fff;
     text-align: center;
-    padding: 10px 0;
+    padding: 10px;
+    background-color: #2c3e50;
+    color: white;
     position: fixed;
     bottom: 0;
     width: 100%;
-}
-
-footer p {
-    margin: 0;
-}
-.content {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    margin: 20px;
-}
-
-.content .section {
-    background-color: #ffffff;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    width: 45%;
-    margin: 10px;
-    box-sizing: border-box;
-}
-
-.content .section img {
-    max-width: 100%;
-    border-radius: 8px;
-}
-/* Case Studies and Examples Section Styles */
-#case-studies {
-    background-color: #f0f8f841; /* Light background for contrast */
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin: 20px auto;
-    max-width: 1200px; /* Center align and limit width */
-}
-
-#case-studies h2 {
-    font-size: 2rem;
-    margin-bottom: 20px;
-    text-align: center;
-    color: #fff;
-}
-
-#case-studies .case-study {
-    margin-bottom: 30px;
-    padding: 15px;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    background-color: #fff;
-}
-
-#case-studies .case-study h3 {
-    margin-top: 0;
-    font-size: 1.5rem;
-    color: #2a9d8f;
-}
-
-#case-studies .case-study img {
-    max-width: 100%;
-    border-radius: 8px;
-    margin-bottom: 15px;
-}
-
-#case-studies .case-study p {
-    line-height: 1.6;
-}
-
-#case-studies .case-study a {
-    display: inline-block;
-    margin-top: 10px;
-    font-weight: bold;
 }
