@@ -53,3 +53,11 @@ function getUserLocation() {
 
 // Call the function to get user location and fetch weather data
 getUserLocation();
+document.addEventListener("DOMContentLoaded", function () {
+    const menuToggle = document.querySelector(".menu-toggle");
+    const menu = document.querySelector(".menu");
+
+    menuToggle.addEventListener("click", function () {
+        menu.classList.toggle("active");
+    });
+});
